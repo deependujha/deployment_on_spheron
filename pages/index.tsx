@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+// import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -10,7 +11,11 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div>Hello world</div>
+			<div className="text-blue-600 font-bold text-center">Hello world</div>
+			<Link href="/hello">
+				<div className="text-red-500 underline"> Go to hello page</div>
+			</Link>
+			<img src="/bg3.jpg" height="300" width="300" alt="a sample image" />
 		</>
 	);
 }
