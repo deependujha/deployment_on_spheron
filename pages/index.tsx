@@ -15,7 +15,7 @@ export default function Home() {
 			<Link href="/hello">
 				<div className="text-red-500 underline"> Go to hello page</div>
 			</Link>
-			<img src="/bg3.jpg" height="300" width="300" alt="a sample image" />
+			<Image src="/bg3.jpg" height="300" width="300" alt="a sample image" />
 		</>
 	);
 }
